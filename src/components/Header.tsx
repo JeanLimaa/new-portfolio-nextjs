@@ -4,7 +4,7 @@ export const Header = () => {
 
     return (
         <header className="header">
-            <a href="#" className="logo">Meu Portfolio</a>
+            <a href="#" className="logo">Jean Lima</a>
             <i className='bx bx-menu' id="menu-icon"></i>
             <nav className="navbar">
                 <a href=""></a>

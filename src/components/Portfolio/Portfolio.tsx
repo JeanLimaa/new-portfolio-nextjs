@@ -1,5 +1,6 @@
 import { Project } from "./Project"
 import { TechImage } from "./TechImage"
+import { techsUrl } from "./techsUrl"
 
 export const Portfolio = () => {
     return (
@@ -13,12 +14,25 @@ export const Portfolio = () => {
                     description={'ReactivePass é uma aplicação fullstack, trazendo um gerenciador de senhas e geração de senhas fortes.'}
                     hrefRepo="https://github.com/JeanLimaa/reactivepass-gerador-de-senhas"
                 >
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg'} />
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'} />
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg'} />
-                    <TechImage src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"} />
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'} />
+                    <TechImage src={techsUrl.NextJs} />
+                    <TechImage src={techsUrl.React} />
+                    <TechImage src={techsUrl.MongoDB} />
+                    <TechImage src={techsUrl.TailwindCss} />
+                    <TechImage src={techsUrl.Javascript} />
                 </Project>
+                {/*  <Project
+                    title='Landing Page - SulDepilla&Bronze'
+                    image='/projects/reactivepass.png'
+                    href=''
+                    description={'Uma landing page criada para a empresa SulDepilla&Bronze.'}
+                    hrefRepo="https://github.com/JeanLimaa/landing-page-suldepilabronze"
+                >
+                    <TechImage src={techsUrl.NextJs} />
+                    <TechImage src={techsUrl.React} />
+                    <TechImage src={techsUrl.Typescript} />
+                    <TechImage src={techsUrl.TailwindCss} />
+                    <TechImage src={techsUrl.MaterialUI} />
+                </Project> */}
                 <Project
                     title='Loja virtual'
                     image='/projects/loja-virtual.png'
@@ -26,10 +40,10 @@ export const Portfolio = () => {
                     description={'Esse projeto é uma loja ficticia de eletrônicos, desenvolvida em NextJS.'}
                     hrefRepo="https://github.com/JeanLimaa/loja-virtual-ficticia-com-NextJS"
                 >
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg'} />
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'} />
-                    <TechImage src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"} />
-                    <TechImage src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"} />
+                    <TechImage src={techsUrl.NextJs} />
+                    <TechImage src={techsUrl.React} />
+                    <TechImage src={techsUrl.Typescript} />
+                    <TechImage src={techsUrl.Bootstrap} />
                 </Project>
                 <Project
                     title='Quantum Stock'
@@ -38,8 +52,9 @@ export const Portfolio = () => {
                     description={'Este é um site para controle de estoque, é uma SPA e foi feita utilizando o ReactJS e react-router-dom.'}
                     hrefRepo="https://github.com/JeanLimaa/controle-de-estoque-reactJS"
                 >
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'} />
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'} />
+                    <TechImage src={techsUrl.React} />
+                    <TechImage src={techsUrl.Javascript} />
+                    <TechImage src={techsUrl.Css} />
                 </Project>
                 <Project
                     title='Meu portfolio'
@@ -49,10 +64,10 @@ export const Portfolio = () => {
                     disabledProject={true}
                     hrefRepo="" //adicionar ao fazer deploy
                 >
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg'} />
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'} />
-                    <TechImage src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"} />
-                    <TechImage src={"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"} />
+                    <TechImage src={techsUrl.NextJs} />
+                    <TechImage src={techsUrl.React} />
+                    <TechImage src={techsUrl.Typescript} />
+                    <TechImage src={techsUrl.MaterialUI} />
                 </Project>
                 <Project
                     title='Calculadora Javascript'
@@ -61,9 +76,9 @@ export const Portfolio = () => {
                     description={'Uma Calculadora simples, a qual foi desenvolvida ainda enquanto eu aprendia os fundamentos do JS.'}
                     hrefRepo="https://github.com/JeanLimaa/calculadora-js"
                 >
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'} />
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'} />
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'} />
+                    <TechImage src={techsUrl.Javascript} />
+                    <TechImage src={techsUrl.Css} />
+                    <TechImage src={techsUrl.Html} />
                 </Project>
                 <Project
                     title='Coleta Salvador'
@@ -72,9 +87,9 @@ export const Portfolio = () => {
                     hrefRepo="https://github.com/JeanLimaa/coleta-salvador"
                     description={'Embora simples, foi desenvolvido para um trabalho academico, com o objetivo de mapear os pontos de coleta da cidade de Salvaldor.'}
                 >
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'} />
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'} />
-                    <TechImage src={'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'} />
+                    <TechImage src={techsUrl.Javascript} />
+                    <TechImage src={techsUrl.Css} />
+                    <TechImage src={techsUrl.Html} />
                 </Project>
             </div>
         </section>

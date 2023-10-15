@@ -13,10 +13,8 @@ export const AboutText = () => {
             {
                 showMore && (
                     <p>
-                        Sou um desenvolvedor Fullstack Javascript, com ênfase no desenvolvimento front-end. Minha jornada
-                        no mundo da programação me permitiu dominar uma variedade de tecnologias e frameworks, permitindo-me criar
-                        aplicativos web incríveis.
-                        <span>Além disso, sou um entusiasta autodidata que está sempre buscando aprender e aprimorar minhas habilidades.</span>
+                        Minha jornada no mundo da programação me permitiu dominar uma variedade de tecnologias e frameworks, permitindo-me criar
+                        aplicativos web incríveis. Além disso, estou sempre buscando aprender e aprimorar minhas habilidades.
                     </p>
                 )
             }
