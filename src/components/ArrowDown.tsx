@@ -1,11 +1,13 @@
-
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import IconButton from "@mui/material/IconButton";
+import AnchorSection from './AnchorSection';
 
-export const ArrowDown = () => {
+export const ArrowDown = ({ to }: { to: string }) => {
     return (
-        <IconButton href="#skills" color="secondary" className="arrow-to-down">
-            {<ArrowDownwardIcon id="arrowDown" />}
-        </IconButton>
+        <AnchorSection to={to} className="arrow-to-down">
+            <IconButton color="secondary" >
+                {<ArrowDownwardIcon id="arrowDown" />}
+            </IconButton>
+        </AnchorSection>
     )
 }

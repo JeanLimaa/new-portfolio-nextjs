@@ -1,15 +1,13 @@
 import { Skills } from '@/components/Skills/Skills'
 import { HomeSection } from '@/components/Home'
-import { Header } from '@/components/Header'
-import { About } from '@/components/About/About'
 import { Portfolio } from '@/components/Portfolio/Portfolio'
+import { AboutComponent } from '@/components/About/About'
 
 export default function Home() {
   return (
     <main>
-      <Header />
       <HomeSection />
-      <About />
+      <AboutComponent />
       <Skills />
       <Portfolio />
     </main>

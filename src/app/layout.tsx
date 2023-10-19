@@ -1,14 +1,16 @@
-import './styles/scroll.css';
-import './styles/globals.css';
+import '@/styles/scroll.css';
+import '@/styles/globals.css';
 
 import type { Metadata } from 'next'
-import { Poppins } from 'next/font/google'
+import { Oxanium } from 'next/font/google'
+import { Header } from '@/components/Header/Header';
 
-const inter = Poppins({ subsets: ['latin'], weight: "600" })
+const oxanium = Oxanium({ subsets: ['latin'], weight: ["300", "600", "400", "500", "600", "700"]})
 
 export const metadata: Metadata = {
   title: 'Portfolio - Jean',
   description: 'Portfolio de Jean Lima, desenvolvedor fullstack javascript.',
+  icons: '/icon.png'
 }
 
 export default function RootLayout({
@@ -18,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={oxanium.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
