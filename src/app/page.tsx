@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import { Services } from '@/components/Services/Services'
+import { Skills } from '@/components/Skills/Skills'
 import { HomeSection } from '@/components/Home'
 import { Header } from '@/components/Header'
 import { About } from '@/components/About/About'
@@ -11,7 +10,7 @@ export default function Home() {
       <Header />
       <HomeSection />
       <About />
-      <Services />
+      <Skills />
       <Portfolio />
     </main>
   )

@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Portfolio/Project.tsx", "src/components/Portfolio/TechImage.tsx", "src/components/Typedjs.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/Portfolio/Project.tsx", "src/components/Portfolio/TechImage.tsx", "src/components/Typedjs.jsx", "src/hooks/scrollreveal.js", "src/components/Gsap.jsx"],
   "exclude": ["node_modules"]
 }

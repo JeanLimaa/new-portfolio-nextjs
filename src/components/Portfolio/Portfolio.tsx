@@ -1,13 +1,47 @@
 import { Project } from "./Project"
 import { TechImage } from "./TechImage"
-import { techsUrl } from "./techsUrl"
+import { techsUrl } from "../../utils/techs"
+
+import allProjects from "@/utils/allProjects"
 
 export const Portfolio = () => {
     return (
         <section className="portfolio" id="portfolio">
             <h2 className="heading">Últimos <span>Projetos</span></h2>
             <div className="projects">
-                <Project
+                {allProjects.map((project, index) => (
+                    <Project
+                        key={index}
+                        title={project.title}
+                        image={project.image}
+                        href={project.href}
+                        description={project.description}
+                        hrefRepo={project.hrefRepo}
+                        disabledProject={project.disabledProject}
+                    >
+                        {project.techs.map(techs => (
+                            <TechImage key={techs} src={techsUrl[techs]} />
+                        ))}
+                    </Project>
+                ))}
+                {/*             {allProjects.map((project, index) => {
+                    <Project
+                        key={index}
+                        title={project.title}
+                        image={project.image}
+                        href={project.href}
+                        description={project.description}
+                        hrefRepo={project.hrefRepo}
+                    >
+                        <TechImage src={techsUrl.NextJs} />
+                        <TechImage src={techsUrl.React} />
+                        <TechImage src={techsUrl.MongoDB} />
+                        <TechImage src={techsUrl.TailwindCss} />
+                        <TechImage src={techsUrl.Javascript} />
+                    </Project> 
+            })} */}
+
+                {/*                 <Project
                     title='ReactivePass'
                     image='/projects/reactivepass.png'
                     href='https://reactivepass.vercel.app'
@@ -19,7 +53,7 @@ export const Portfolio = () => {
                     <TechImage src={techsUrl.MongoDB} />
                     <TechImage src={techsUrl.TailwindCss} />
                     <TechImage src={techsUrl.Javascript} />
-                </Project>
+                </Project> */}
                 {/*  <Project
                     title='Landing Page - SulDepilla&Bronze'
                     image='/projects/reactivepass.png'
@@ -33,7 +67,7 @@ export const Portfolio = () => {
                     <TechImage src={techsUrl.TailwindCss} />
                     <TechImage src={techsUrl.MaterialUI} />
                 </Project> */}
-                <Project
+                {/*                 <Project
                     title='Loja virtual'
                     image='/projects/loja-virtual.png'
                     href='https://loja-ficticia-jeanlima.vercel.app'
@@ -90,7 +124,7 @@ export const Portfolio = () => {
                     <TechImage src={techsUrl.Javascript} />
                     <TechImage src={techsUrl.Css} />
                     <TechImage src={techsUrl.Html} />
-                </Project>
+                </Project> */}
             </div>
         </section>
     )
