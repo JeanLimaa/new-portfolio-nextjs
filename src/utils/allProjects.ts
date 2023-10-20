@@ -39,7 +39,7 @@ const allProjects: Project[] = [
         title: 'Meu portfolio',
         image: '/projects/portfolio.png',
         href: 'https://jeanlimaa.github.io',
-        description: 'Esse mesmo portfolio. Pois ora, também é um projeto o qual utilizei de algumas tecnologias.',
+        description: 'Esse mesmo portfolio. Pois ora, também é um projeto o qual me dediquei em fazê-lo e utilizei de algumas tecnologias.',
         hrefRepo: "", //adicionar ao fazer deploy
         techs: ['NextJs','React', 'Typescript', 'MaterialUI'],
         disabledProject: true
