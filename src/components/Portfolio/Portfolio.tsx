@@ -17,7 +17,7 @@ export const Portfolio = () => {
                         href={project.href}
                         description={project.description}
                         hrefRepo={project.hrefRepo}
-                        disabledProject={project.disabledProject}
+                        disabledProject={project.disabledProjectUrl}
                     >
                         {project.techs.map(techs => (
                             <TechImage key={techs} src={techsUrl[techs]} />

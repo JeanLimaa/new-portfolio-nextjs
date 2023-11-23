@@ -7,7 +7,7 @@ interface Project {
     description: string;
     hrefRepo: string;
     techs: TechKey[];
-    disabledProject?: boolean;
+    disabledProjectUrl?: boolean;
   }
 
 const allProjects: Project[] = [
@@ -18,6 +18,14 @@ const allProjects: Project[] = [
         description: 'ReactivePass é uma aplicação fullstack, trazendo um gerenciador de senhas e geração de senhas fortes.',
         hrefRepo: "https://github.com/JeanLimaa/reactivepass-gerador-de-senhas",
         techs: ['NextJs', 'React', 'MongoDB', 'TailwindCss', 'Javascript']
+    },
+    {
+        title: 'Landing Page',
+        image: '/projects/sulldepilaebronze.png',
+        href: 'https://suldepillaebronze.vercel.app',
+        description: 'Landing page desennvolvida para a empresa SullDepilla&Bronze. Ainda restando a escolha das imagens.',
+        hrefRepo: "https://github.com/JeanLimaa/landing-page-suldepilabronze",
+        techs: ['NextJs', 'React', 'Typescript', 'TailwindCss']
     },
     {
         title: 'Loja virtual',
@@ -38,11 +46,11 @@ const allProjects: Project[] = [
     {
         title: 'Meu portfolio',
         image: '/projects/portfolio.png',
-        href: 'https://jeanlimaa.github.io',
+        href: 'https://jeanlimaa.vercel.app',
         description: 'Esse mesmo portfolio. Pois ora, também é um projeto o qual me dediquei em fazê-lo e utilizei de algumas tecnologias.',
-        hrefRepo: "", //adicionar ao fazer deploy
+        hrefRepo: "https://github.com/JeanLimaa/new-portfolio-nextjs",
         techs: ['NextJs','React', 'Typescript', 'MaterialUI'],
-        disabledProject: true
+        disabledProjectUrl: true
     },
     {
         title: 'Calculadora Javascript',
