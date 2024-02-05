@@ -28,6 +28,7 @@ export const Project = ({ title, description, image, href, hrefRepo, children, d
         component="img"
         alt={title}
         height="200"
+        style={{objectFit: 'fill'}}
         image={image}
       />
       <CardContent>

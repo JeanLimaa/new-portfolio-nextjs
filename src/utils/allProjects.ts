@@ -1,4 +1,4 @@
-type TechKey = 'TailwindCss' | 'NextJs' | 'React' | 'MongoDB' | 'Javascript' | 'Typescript' | 'Bootstrap' | 'MaterialUI' | 'Css' | 'Html';
+type TechKey = 'TailwindCss' | 'NextJs' | 'Python' | 'OpenCV' | 'MediaPipe' | 'React' | 'MongoDB' | 'Javascript' | 'Typescript' | 'Bootstrap' | 'MaterialUI' | 'Css' | 'Html';
 
 interface Project {
     title: string;
@@ -26,6 +26,15 @@ const allProjects: Project[] = [
         description: 'Landing page desennvolvida para a empresa SullDepilla&Bronze. Ainda restando a escolha das imagens.',
         hrefRepo: "https://github.com/JeanLimaa/landing-page-suldepilabronze",
         techs: ['NextJs', 'React', 'Typescript', 'TailwindCss']
+    },
+    {
+        title: 'Dedos Levantados',
+        image: '/projects/counter_fingers.png',
+        href: '',
+        description: 'Este aplicativo utiliza visão computacional para contar o número de dedos levantados em tempo real.',
+        hrefRepo: "https://github.com/JeanLimaa/raised_fingers_counter",
+        techs: ['Python', 'OpenCV', 'MediaPipe'],
+        disabledProjectUrl: true
     },
     {
         title: 'Loja virtual',

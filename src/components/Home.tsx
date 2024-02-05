@@ -19,7 +19,7 @@ export const HomeSection = () => {
                     <a target="_blank" href="https://www.linkedin.com/in/jeanlimaa/"><Image width={20} height={100} src="/redes-sociais/linkedin.svg" alt="linkedin de jean" /></a>
                     <a target="_blank" href="mailto:jeansantoslima17@gmail.com"><Image width={20} height={100} src="/redes-sociais/email.svg" alt="email de jean" /></a>
                 </div>
-                <a href="/curriculo/ENGLISH_CV.pdf" target="_blank" download="CURRICULO EN-US - JEAN" className="btn" >Download CV</a>
+                <a href="/curriculo/CURRICULO_PT-BR.pdf" target="_blank" download="CURRICULO PT-BR" className="btn" >Download CV</a>
             </div>
             <div className="home-img">
                 <img src="/Jean-nobg.png" alt="Foto de Jean" />
