@@ -4,7 +4,7 @@ const nextConfig = {}
 // next.config.js
 module.exports = {
     images: {
-      domains: ['viz.mediapipe.dev'],
+      domains: ['cdn.jsdelivr.net', 'viz.mediapipe.dev'],
     },
   };
   
