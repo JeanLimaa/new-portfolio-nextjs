@@ -41,7 +41,7 @@ export const Project = ({ title, description, image, href, hrefRepo, children, d
       </CardContent>
       <CardActions sx={{gap: '0.5rem'}}> 
         <Button sx={{paddingX: '2rem', fontSize: '1.11rem'}}
-        startIcon={<OpenInNewIcon fontSize='medium' color='action'/>} size="large" variant='contained' disabled={disabledProject || false} href={href} {...(hrefRepo ? { target: '_blank' } : {})} >Visitar Projeto</Button>
+        startIcon={<OpenInNewIcon fontSize='medium' color='action'/>} size="large" variant='contained' disabled={disabledProject || false} href={href} {...(href ? { target: '_blank' } : {})} >Visitar Projeto</Button>
         <Button sx={{paddingX: '2rem', fontSize: '1.11rem'}}
         startIcon={<GitHubIcon fontSize='medium' color='primary' />} size="large" variant='outlined' disabled={disabledRepo || false} href={hrefRepo} {...(hrefRepo ? { target: '_blank' } : {})} >
           Repositório
