@@ -1,13 +1,17 @@
 import { Project } from "./Project"
 import { TechImage } from "./TechImage"
-import { techsUrl } from "../../utils/techs"
+import { techsInfo } from "../../utils/techs"
 
 import allProjects from "@/utils/allProjects"
 
-export const Portfolio = () => {
+import { PortfolioSectionInterface } from "@/interfaces/i18n"
+interface PortfolioSectionProps {
+    dictionary : PortfolioSectionInterface;
+}
+export const Portfolio = ({dictionary}: PortfolioSectionProps) => {
     return (
         <section className="portfolio" id="portfolio">
-            <h2 className="heading">Últimos <span>Projetos</span></h2>
+            <h2 className="heading">{dictionary.title.last} <span>{dictionary.title.projects}</span></h2>
             <div className="projects">
                 {allProjects.map((project, index) => (
                     <Project
@@ -21,7 +25,7 @@ export const Portfolio = () => {
                         disabledRepo={project.disabledRepo}
                     >
                         {project.techs.map(techs => (
-                            <TechImage key={techs} src={techsUrl[techs]} />
+                            <TechImage key={techs} src={techsInfo[techs].url} />
                         ))}
                     </Project>
                 ))}

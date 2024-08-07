@@ -2,16 +2,12 @@
 import React from 'react';
 import Typed from 'typed.js';
 
-export default function Typedjs() {
+export default function Typedjs({dictionary}) {
   const el = React.useRef(null);
-
+  
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [
-        '<i>Desenvolvedor</i> de Software.', 
-        '<i>Dev.</i> Fullstack Javascript.',
-        '<i>Desenvolvedor</i> Front-end.'
-      ],
+      strings: dictionary.typedjs,
       typeSpeed: 60,
       backSpeed: 60,
       loop: true

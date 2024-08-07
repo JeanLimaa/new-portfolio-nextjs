@@ -1,6 +1,10 @@
 import { AboutText } from "./AboutText";
+import { AboutSectionInterface } from "@/interfaces/i18n"
+interface AboutSectionProps {
+    dictionary : AboutSectionInterface;
+}
 
-export const AboutComponent = () => {
+export const AboutComponent = ({dictionary}: AboutSectionProps) => {
 
     return (
         <section className="about" id="about">
@@ -8,14 +12,12 @@ export const AboutComponent = () => {
                 <img src="/Jean-nobg.png" alt="imagem de jean" />
             </div>
             <div className="about-content">
-                <h2 className="heading">Sobre <span>Mim</span></h2>
-                <h3>Desenvolvedor Fullstack Javascript</h3>
+                <h2 className="heading">{dictionary.title.about} <span>{dictionary.title.me}</span></h2>
+                <h3>{dictionary.subTitle}</h3>
                 <p>
-                    Eu me chamo Jean Lima, sou do estado da Bahia e tenho 19 anos. Sou apaixonado por Computação e
-                    atualmente estou cursando bacharelado em Ciências da Computação, curso o qual gosto muito e me interesso desde
-                    a infância. Sou um desenvolvedor Fullstack Javascript, com ênfase no desenvolvimento front-end.
+                   {dictionary.description.content}
                 </p>
-                <AboutText />
+                <AboutText dictionary={dictionary}/>
             </div>
         </section>
     );

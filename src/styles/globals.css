@@ -478,3 +478,10 @@ section#about {
         width: 78vw;
     }
 }
+
+.select-categorys{
+    display: flex;
+    justify-content: flex-end;
+    /* font-size: 10rem !important;
+    color: white !important; */
+}

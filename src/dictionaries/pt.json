@@ -1,0 +1,53 @@
+{
+  "header": {
+    "links": {
+      "start": "Inicio",
+      "about": "Sobre",
+      "skills": "Habilidades",
+      "projects": "Projetos"
+    },
+    "languages": {
+      "pt": "Português",
+      "en": "Inglês"
+    }
+  },
+  "home": {
+    "title": "Olá, me chamo",
+    "myName": "Jean Lima",
+    "whatIm": "E eu sou",
+    "description": "Seja bem vindo ao meu Portfolio. E aqui você poderá conhecer um pouco mais sobre mim! Abaixo você irá encontrar meu Curriculo e minhas Redes Sociais.",
+    "cv": "Baixar Curriculo",
+    "typedjs": [
+      "<i>Desenvolvedor</i> de Software.",
+      "<i>Dev.</i> Fullstack Javascript.",
+      "<i>Desenvolvedor</i> Front-end."
+    ]
+  },
+  "about": {
+    "title": {
+      "about": "Sobre",
+      "me": "Mim"
+    },
+    "subTitle": "Desenvolvedor Fullstack Javascript",
+    "description": {
+      "content": "Eu me chamo Jean Lima, sou do estado da Bahia e tenho 19 anos. Sou apaixonado por Computação e atualmente estou cursando bacharelado em Ciências da Computação, curso o qual gosto muito e me interesso desde a infância. Sou um desenvolvedor Fullstack Javascript, com ênfase no desenvolvimento front-end.",
+      "showMore": "Minha jornada no mundo da programação me permitiu dominar uma variedade de tecnologias e frameworks, permitindo-me criar aplicativos web incríveis. Além disso, estou sempre buscando aprender e aprimorar minhas habilidades."
+    }
+  },
+  "skills": {
+    "title": [
+      "Habilidades em Desenvolvimento de",
+      "Software"
+    ],
+    "filter": {
+      "all": "Todos",
+      "filterBy": "Filtrar por Categorias"
+    }
+  },
+  "portfolio": {
+    "title": {
+      "last": "Últimos",
+      "projects": "Projetos"
+    }
+  }
+}

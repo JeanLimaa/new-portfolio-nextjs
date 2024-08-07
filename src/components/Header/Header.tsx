@@ -1,24 +1,29 @@
 import HeaderLink from "@/components/AnchorSection"; 
 import { Navbar } from "./Navbar";
 
-export const Header = () => {
+import { HeaderInterface } from "@/interfaces/i18n"
+interface HeaderProps {
+    dictionary : HeaderInterface;
+}
+
+export const Header = ({dictionary}: HeaderProps) => {
   return (
     <header className="header">
       <HeaderLink to="home" logo>
         Jean Lima
       </HeaderLink>
-      <Navbar>
+      <Navbar dictionary={dictionary}>
         <HeaderLink to="home">
-          Inicio
+          {dictionary.links.start}
         </HeaderLink>
         <HeaderLink to="about">
-          Sobre
+          {dictionary.links.about}
         </HeaderLink>
         <HeaderLink to="skills">
-          Habilidades
+          {dictionary.links.skills}
         </HeaderLink>
         <HeaderLink to="portfolio">
-          Projetos
+          {dictionary.links.projects}
         </HeaderLink>
       </Navbar>
     </header>

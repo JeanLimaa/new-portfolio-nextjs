@@ -1,24 +1,31 @@
-export const techsUrl = {
-    Javascript: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-    Typescript: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
-    NextJs: '/nextjs.svg',//'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg',
-    React: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-    Redux: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg',
-    Nodejs: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
-    MongoDB: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
-    PostgreSQL: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
-    TailwindCss: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-    MaterialUI: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg',
-    Bootstrap: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
-    Python: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
-    OpenCV: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg',
-    MediaPipe: 'https://viz.mediapipe.dev/logo.png',
-    Css: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
-    Html: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-    Git: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'
+export type CategorysType = 'all' | 'Front-End' | 'Back-End' | 'Versionamento'
+
+interface TechsInterface {
+    [techName: string]: {url: string, category: CategorysType[]}
 }
 
-export const techsArray = Object.entries(techsUrl).map(([name, url]) => ({
+export const techsInfo: TechsInterface = {
+    Javascript: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', category: ['Front-End', 'Back-End'] },
+    Typescript: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', category: ['Front-End', 'Back-End'] },
+    NextJs: { url: '/nextjs.svg', category: ['Front-End'] },
+    React: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', category: ['Front-End'] },
+    Redux: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg', category: ['Front-End'] },
+    Nodejs: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', category: ['Back-End'] },
+    MongoDB: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', category: ['Back-End'] },
+    PostgreSQL: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', category: ['Back-End'] },
+    TailwindCss: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg', category: ['Front-End'] },
+    MaterialUI: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg', category: ['Front-End'] },
+    Bootstrap: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg', category: ['Front-End'] },
+/*     Python: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', category: ['Back-End', 'Data Science'] },
+    OpenCV: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg', category: ['Computer Vision'] },
+    MediaPipe: { url: 'https://viz.mediapipe.dev/logo.png', category: ['Computer Vision'] }, */
+    Css: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', category: ['Front-End'] },
+    Html: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', category: ['Front-End'] },
+    Git: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', category: ['Versionamento'] }
+  };
+
+export const techsArray = Object.entries(techsInfo).map(([name, infos]) => ({
     name,
-    url,
+    url: infos.url,
+    category: infos.category
 }));

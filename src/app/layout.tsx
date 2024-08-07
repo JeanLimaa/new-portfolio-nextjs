@@ -13,16 +13,18 @@ export const metadata: Metadata = {
   icons: '/icon.png'
 }
 
-export default function RootLayout({
-  children,
-}: {
+interface Props {
   children: React.ReactNode
-}) {
+}
+
+export default async function  RootLayout({
+  children
+}: Props) {
+
   return (
-    <html lang="pt-br">
+    <html lang={"pt"}>
       <body className={oxanium.className}>
-        <Header />
-        {children}
+          {children}
       </body>
     </html>
   )

@@ -1,7 +1,12 @@
 'use client'
+import { AboutSectionInterface } from '@/interfaces/i18n';
 import React, { useState } from 'react';
 
-export const AboutText = () => {
+interface AboutSectionProps {
+    dictionary : AboutSectionInterface;
+}
+
+export const AboutText = ({dictionary}: AboutSectionProps) => {
     const [showMore, setShowMore] = useState(false);
 
     const toggleReadMore = () => {
@@ -13,8 +18,7 @@ export const AboutText = () => {
             {
                 showMore && (
                     <p>
-                        Minha jornada no mundo da programação me permitiu dominar uma variedade de tecnologias e frameworks, permitindo-me criar
-                        aplicativos web incríveis. Além disso, estou sempre buscando aprender e aprimorar minhas habilidades.
+                        {dictionary.description.showMore}
                     </p>
                 )
             }
