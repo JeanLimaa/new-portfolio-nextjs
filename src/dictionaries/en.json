@@ -15,7 +15,11 @@
     "title": "Hey there, i'm",
     "whatIm": "And i'm",
     "description": "Welcome to my Portfolio. Here, you'll know more about me! Under you find my CV and Social Medias to contact.",
-    "cv": "Download CV",
+    "cv": {
+      "content": "Download CV",
+      "link": "ENGLISH_CV.pdf",
+      "downloadName": "CV - Jean Lima (EN)"
+    },
     "typedjs": [
       "<i>Software</i> Developer.", 
       "<i>Dev.</i> Fullstack Javascript.",

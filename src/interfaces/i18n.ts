@@ -1,11 +1,11 @@
 export interface HeaderInterface {
-    links:{
+    links: {
         start: string;
         about: string;
         skills: string;
         projects: string
     }
-    languages: {pt: string, en: string}
+    languages: { pt: string, en: string }
 }
 
 export interface HomeSectionInterface {
@@ -13,29 +13,33 @@ export interface HomeSectionInterface {
     myName: string;
     whatIm: string;
     description: string;
-    cv: string;
+    cv: {
+        content: string;
+        link: string;
+        downloadName: string;
+    };
     typedjs: string[];
 }
 
 export interface AboutSectionInterface {
     title: {
-      about: string;
-      me: string;
+        about: string;
+        me: string;
     };
     subTitle: string;
     description: {
-      content: string;
-      showMore: string;
+        content: string;
+        showMore: string;
     };
 }
 
 export interface SkillsSectionInterface {
     title: [string, string];
-    filter: {all: string; filterBy: string;};
+    filter: { all: string; filterBy: string; };
 }
 
 export interface PortfolioSectionInterface {
-    title: {last: string; projects: string;};
+    title: { last: string; projects: string; };
 }
 
 export interface DictionaryInterface {

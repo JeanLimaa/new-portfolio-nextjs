@@ -16,7 +16,11 @@
     "myName": "Jean Lima",
     "whatIm": "E eu sou",
     "description": "Seja bem vindo ao meu Portfolio. E aqui você poderá conhecer um pouco mais sobre mim! Abaixo você irá encontrar meu Curriculo e minhas Redes Sociais.",
-    "cv": "Baixar Curriculo",
+    "cv": {
+      "content": "Baixar Curriculo",
+      "link": "PORTUGUESE_CV.pdf",
+      "downloadName": "CURRICULO - Jean Lima (PT)"
+    },
     "typedjs": [
       "<i>Desenvolvedor</i> de Software.",
       "<i>Dev.</i> Fullstack Javascript.",

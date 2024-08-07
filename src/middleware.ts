@@ -3,7 +3,8 @@ import { i18n, Locale } from "./i18n-config";
 
 export function getLocale(request: NextRequest): string {
   const cookieLocale = request.cookies.get("language")?.value as Locale;
-  if (cookieLocale && i18n.locales.find(lang => lang === cookieLocale)) {
+  const isValidCookie = i18n.locales.find(lang => lang === cookieLocale);
+  if (cookieLocale && isValidCookie) {
     return cookieLocale;
   }
 

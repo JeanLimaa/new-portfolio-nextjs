@@ -23,7 +23,9 @@ export const HomeSection = ({dictionary}: HomeSectionProps) => {
                     <a target="_blank" href="https://www.linkedin.com/in/jeanlimaa/"><Image width={20} height={100} src="/redes-sociais/linkedin.svg" alt="linkedin de jean" /></a>
                     <a target="_blank" href="mailto:jeansantoslima17@gmail.com"><Image width={20} height={100} src="/redes-sociais/email.svg" alt="email de jean" /></a>
                 </div>
-                <a href="/curriculo/CV_PT-BR.pdf" target="_blank" download="CURRICULO PT-BR" className="btn" >{dictionary.cv}</a>
+                <a href={`/curriculo/${dictionary.cv.link}`} target="_blank" download={dictionary.cv.downloadName} className="btn" >
+                    {dictionary.cv.content}
+                </a>
             </div>
             <div className="home-img">
                 <img src="/Jean-nobg.png" alt="Foto de Jean" />

@@ -187,8 +187,8 @@ span {
     height: 4rem;
     background: transparent;
     border: .2rem solid var(--main-color);
-    border-radius: 50%;
     color: var(--main-color);
+    border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: .5 ease;
 }
@@ -197,7 +197,7 @@ span {
     background: var(--main-color);
     color: var(--second-bg-color);
     border: 0.2rem solid var(--second-bg-color);
-    /* Adicione uma borda com a cor desejada */
+    
     border-radius: 50%;
     box-shadow: 0 0 1rem var(--main-color);
     animation: floatIcon 2s ease-in-out infinite;
@@ -205,7 +205,7 @@ span {
 }
 
 .social-media a:hover img {
-    filter: invert(0.5);
+    filter: invert(1) brightness(90);
     transform: scale(1.3);
     transition: 0.5;
 }
@@ -482,6 +482,55 @@ section#about {
 .select-categorys{
     display: flex;
     justify-content: flex-end;
-    /* font-size: 10rem !important;
-    color: white !important; */
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #323946;
+    border: 1px solid #1f242d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    gap: 0.75rem;
+    padding: 0.4rem 1.2rem;
+    border-radius: 0.5rem;
+    font-family: inherit;
+  }
+  .dropdown-toggle:hover, .dropdown-menu li:hover{
+    transition: ease-in-out 0.2s;
+    background-color: #1f242d;
+    color: #d541fa;
+  }
+  .dropdown-toggle:hover{
+    border: 1px solid #323946;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #323946;
+    border: 1px solid #1f242d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    width: 100%;
+  }
+  .dropdown-menu li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.4rem 1.2rem;
+    gap: 0.75rem;
+  }
+  .navbar-group{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
