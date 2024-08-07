@@ -1,7 +1,7 @@
 'use client';
 import { Skill } from "./Skill"
 import { techsArray } from "@/utils/techs"
-import { SelectCategorys } from "../Select"
+import { SelectCategorys } from "../SelectCategorys/Select"
 import { useState } from "react";
 import { CategorysType } from "@/utils/techs";
 import { SkillsSectionInterface } from "@/interfaces/i18n";

@@ -15,12 +15,12 @@
     --main-color: #d541fa;
 }
 
-:root {
+/* :root {
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
     --main-color: #d541fa;
-}
+} */
 
 html {
     font-size: 62.5%;
@@ -28,7 +28,7 @@ html {
 }
 
 section.portfolio {
-    background: #323946;
+    background: var(--second-bg-color);/* #323946; */
     padding: 10rem 5%;
 }
 
@@ -296,7 +296,7 @@ section#about {
 .portfolio-container:hover {
     transform: scale(1.05);
     transition: ease-in-out 0.7s;
-    border: 1px solid #d541fa;
+    border: 1px solid var(--main-color)/* #d541fa */;
 }
 
 .skills h2 {
@@ -479,9 +479,17 @@ section#about {
     }
 }
 
-.select-categorys{
+.filter-categorys{
     display: flex;
     justify-content: flex-end;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.category-text{
+    font-size: 1rem;
+    color: #fff;
 }
 
 .dropdown {
@@ -492,8 +500,8 @@ section#about {
     display: flex;
     align-items: center;
     cursor: pointer;
-    background-color: #323946;
-    border: 1px solid #1f242d;
+    background-color: var(--second-bg-color);/* #323946; */
+    border: 1px solid var(--bg-color)/* #1f242d */;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: #fff;
     gap: 0.75rem;
@@ -503,11 +511,11 @@ section#about {
   }
   .dropdown-toggle:hover, .dropdown-menu li:hover{
     transition: ease-in-out 0.2s;
-    background-color: #1f242d;
-    color: #d541fa;
+    background-color: var(--bg-color)/* #1f242d */;
+    color: var(--main-color)/* #d541fa */;
   }
   .dropdown-toggle:hover{
-    border: 1px solid #323946;
+    border: 1px solid var(--second-bg-color)/* #323946 */;
   }
   .dropdown-menu {
     position: absolute;
@@ -516,8 +524,8 @@ section#about {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    background-color: #323946;
-    border: 1px solid #1f242d;
+    background-color: var(--second-bg-color)/* #323946 */;
+    border: 1px solid var(--bg-color)/* #1f242d */;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     width: 100%;
