@@ -1,3 +1,4 @@
+/* 'server-only';
 
 import { cookies } from 'next/headers';
 import { i18n } from '@/i18n-config';
@@ -10,3 +11,4 @@ export const getLanguage = async () => {
     console.log(language, "cookies")
     return language || defaultLanguage;
 };
+ */

@@ -1,10 +1,10 @@
-import { Skills } from '@/components/Skills/Skills'
-import { HomeSection } from '@/components/Home'
-import { Portfolio } from '@/components/Portfolio/Portfolio'
-import { AboutComponent } from '@/components/About/About'
-import { getDictionary } from '@/functions/dictionary'
-import { DictionaryInterface } from '@/interfaces/i18n'
-import { Header } from '@/components/Header/Header'
+import { Skills } from '@/components/Skills/Skills';
+import { HomeSection } from '@/components/Home';
+import { Portfolio } from '@/components/Portfolio/Portfolio';
+import { AboutComponent } from '@/components/About/About';
+import { getDictionary } from '@/functions/dictionary';
+import { DictionaryInterface } from '@/interfaces/i18n';
+import { Header } from '@/components/Header/Header';
 
 interface Props {
   params: {lang: string}

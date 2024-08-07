@@ -14,7 +14,7 @@
     "@mui/icons-material": "^5.14.14",
     "@mui/material": "^5.14.12",
     "js-cookie": "^3.0.5",
-    "next": "13.5.4",
+    "next": "^14.2.5",
     "portfolio-com-nextjs": "file:",
     "react": "^18",
     "react-dom": "^18",

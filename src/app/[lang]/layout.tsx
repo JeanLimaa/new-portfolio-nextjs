@@ -3,7 +3,6 @@ import '@/styles/globals.css';
 
 import type { Metadata } from 'next'
 import { Oxanium } from 'next/font/google'
-import { Header } from '@/components/Header/Header';
 
 const oxanium = Oxanium({ subsets: ['latin'], weight: ["300", "600", "400", "500", "600", "700"]})
 
@@ -14,15 +13,16 @@ export const metadata: Metadata = {
 }
 
 interface Props {
-  children: React.ReactNode
+  children: React.ReactNode,
+  params: {lang: string}
 }
 
-export default async function  RootLayout({
-  children
+export default async function RootLayout({
+  children,
+  params
 }: Props) {
-
   return (
-    <html lang={"pt"}>
+    <html lang={params.lang}>
       <body className={oxanium.className}>
           {children}
       </body>
