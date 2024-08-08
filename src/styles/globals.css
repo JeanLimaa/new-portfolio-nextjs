@@ -15,13 +15,6 @@
     --main-color: #d541fa;
 }
 
-/* :root {
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
-    --text-color: #fff;
-    --main-color: #d541fa;
-} */
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -500,8 +493,8 @@ section#about {
     display: flex;
     align-items: center;
     cursor: pointer;
-    background-color: var(--second-bg-color);/* #323946; */
-    border: 1px solid var(--bg-color)/* #1f242d */;
+    background-color: var(--second-bg-color);
+    border: 1px solid var(--bg-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: #fff;
     gap: 0.75rem;
@@ -511,11 +504,11 @@ section#about {
   }
   .dropdown-toggle:hover, .dropdown-menu li:hover{
     transition: ease-in-out 0.2s;
-    background-color: var(--bg-color)/* #1f242d */;
-    color: var(--main-color)/* #d541fa */;
+    background-color: var(--bg-color);
+    color: var(--main-color);
   }
   .dropdown-toggle:hover{
-    border: 1px solid var(--second-bg-color)/* #323946 */;
+    border: 1px solid var(--second-bg-color);
   }
   .dropdown-menu {
     position: absolute;
@@ -524,8 +517,8 @@ section#about {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    background-color: var(--second-bg-color)/* #323946 */;
-    border: 1px solid var(--bg-color)/* #1f242d */;
+    background-color: var(--second-bg-color);
+    border: 1px solid var(--bg-color);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     width: 100%;
