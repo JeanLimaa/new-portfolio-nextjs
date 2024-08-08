@@ -5,9 +5,10 @@ import { AboutComponent } from '@/components/About/About';
 import { getDictionary } from '@/functions/dictionary';
 import { DictionaryInterface } from '@/interfaces/i18n';
 import { Header } from '@/components/Header/Header';
+import { Locale } from '@/i18n-config';
 
 interface Props {
-  params: {lang: string}
+  params: {lang: Locale}
 }
 
 export default async function Home({params}: Props) {
@@ -20,7 +21,7 @@ export default async function Home({params}: Props) {
         <HomeSection dictionary={dictionary.home}/>
         <AboutComponent dictionary={dictionary.about}/>
         <Skills dictionary={dictionary.skills}/>
-        <Portfolio dictionary={dictionary.portfolio} />
+        <Portfolio dictionary={dictionary.portfolio} lang={params.lang} />
       </main>
     </>
   )

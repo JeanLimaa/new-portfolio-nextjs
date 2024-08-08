@@ -290,7 +290,7 @@ section#about {
     flex: 1;
     min-width: 400px;
     max-width: 500px;
-    max-height: 430px;
+    max-height: 500px;
 }
 
 .portfolio-container:hover {

@@ -37,3 +37,9 @@
   margin: 1rem;
   min-width: 240px;
 }
+
+@media (max-width: 768px) {
+  .formControl{
+    width: 100%;
+  }
+}

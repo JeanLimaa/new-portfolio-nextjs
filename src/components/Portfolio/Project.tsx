@@ -46,7 +46,9 @@ export const Project = ({
         style={{ objectFit: "fill" }}
         image={image}
       />
-      <CardContent>
+      <CardContent 
+          sx={{height: '130px'}}
+      >
         <Typography
           gutterBottom
           variant="h3"
