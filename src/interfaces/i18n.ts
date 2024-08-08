@@ -28,8 +28,12 @@ export interface AboutSectionInterface {
     };
     subTitle: string;
     description: {
-        content: string;
-        showMore: string;
+        content: string[];
+        showMore: {
+            content: string[];
+            readMore: string;
+            readLess: string;
+        };
     };
 }
 

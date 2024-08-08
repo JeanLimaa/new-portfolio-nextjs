@@ -15,7 +15,7 @@
     "title": "Olá, me chamo",
     "myName": "Jean Lima",
     "whatIm": "E eu sou",
-    "description": "Seja bem vindo ao meu Portfolio. E aqui você poderá conhecer um pouco mais sobre mim! Abaixo você irá encontrar meu Curriculo e minhas Redes Sociais.",
+    "description": "Seja bem-vindo ao meu portfólio! Aqui você poderá conhecer mais sobre minha trajetória e habilidades. Explore meu trabalho, veja os projetos nos quais estive envolvido e sinta-se à vontade para entrar em contato!",
     "cv": {
       "content": "Baixar Curriculo",
       "link": "PORTUGUESE_CV.pdf",
@@ -34,8 +34,18 @@
     },
     "subTitle": "Desenvolvedor Fullstack Javascript",
     "description": {
-      "content": "Eu me chamo Jean Lima, sou do estado da Bahia e tenho 19 anos. Sou apaixonado por Computação e atualmente estou cursando bacharelado em Ciências da Computação, curso o qual gosto muito e me interesso desde a infância. Sou um desenvolvedor Fullstack Javascript, com ênfase no desenvolvimento front-end.",
-      "showMore": "Minha jornada no mundo da programação me permitiu dominar uma variedade de tecnologias e frameworks, permitindo-me criar aplicativos web incríveis. Além disso, estou sempre buscando aprender e aprimorar minhas habilidades."
+      "content": [
+        "Sou Jean Lima, um jovem natural da Bahia e desenvolvedor Fullstack JavaScript com forte ênfase em front-end. Minha paixão por criar soluções web inovadoras me leva a trabalhar em ambos os aspectos do desenvolvimento web, com um foco especial em proporcionar experiências de usuário excepcionais e interfaces intuitivas.",
+        "Com uma sólida experiência em tecnologias e frameworks modernos, consigo transformar ideias em aplicativos web funcionais e atraentes. Estou sempre em busca de aprender novas ferramentas e técnicas, garantindo que meus projetos estejam à frente das tendências tecnológicas."
+      ],
+      "showMore": {
+        "content": [
+          "Atualmente, estou cursando Bacharelado em Ciências da Computação, um campo que me fascina desde a infância. Esta graduação complementa minha experiência prática com uma base teórica robusta, fortalecendo minhas habilidades e ampliando meu conhecimento no desenvolvimento de soluções complexas.",
+          "Explore meu portfólio para conhecer mais sobre meus projetos e habilidades. Estou entusiasmado para compartilhar meu trabalho e discutir como posso contribuir para futuros projetos!"
+        ],
+        "readMore": "Ler mais",
+        "readLess": "Ler menos"
+      }
     }
   },
   "skills": {

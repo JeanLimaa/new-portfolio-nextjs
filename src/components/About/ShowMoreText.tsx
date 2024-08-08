@@ -6,24 +6,22 @@ interface AboutSectionProps {
     dictionary : AboutSectionInterface;
 }
 
-export const AboutText = ({dictionary}: AboutSectionProps) => {
+export const ShowMoreText = ({dictionary}: AboutSectionProps) => {
     const [showMore, setShowMore] = useState(false);
 
     const toggleReadMore = () => {
         setShowMore(!showMore);
     };
 
+    const dictionaryShowMore = dictionary.description.showMore;
     return (
         <>
-            {
-                showMore && (
-                    <p>
-                        {dictionary.description.showMore}
-                    </p>
-                )
-            }
+            {showMore && dictionaryShowMore.content.map((text, index) => (
+                <p key={index}>{text}</p>
+            ))}
+
             <button className="btn" id="btn" onClick={toggleReadMore}>
-                {showMore ? 'Ler menos' : 'Ler mais'}
+                {showMore ? dictionaryShowMore.readLess : dictionaryShowMore.readMore}
             </button>
         </>
     )

@@ -542,3 +542,7 @@ section#about {
     align-items: center;
     gap: 1.5rem;
   }
+
+  .MuiMenu-list{
+    background-color: #333 !important;
+  }

@@ -1,34 +1,39 @@
+/* :root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #d541fa;
+} */
+
 .select {
-    color: #fff; /* Cor do texto */
-    background-color: #444; /* Cor de fundo do Select */
-  }
+  color: #fff; /* Cor do texto */
+  background-color: #323946; /* Cor de fundo do Select */
   
-  .select .MuiSelect-icon {
-    color: #fff; /* Cor do ícone de seleção */
-  }
-  
-  .select .MuiOutlinedInput-root {
-    border-color: #444; /* Cor da borda */
-  }
-  
-  .select .MuiOutlinedInput-root:hover fieldset {
-    border-color: #444; /* Cor da borda ao passar o mouse */
-  }
-  
-  .select .MuiOutlinedInput-root.Mui-focused fieldset {
-    border-color: #444; /* Cor da borda quando em foco */
-  }
-  
-  .menuItem {
-    color: #fff; /* Cor do texto dos itens do menu */
-    background-color: #333; /* Cor de fundo dos itens do menu */
-  }
-  
-  .menuItem:hover {
-    background-color: #555; /* Cor de fundo ao passar o mouse sobre os itens do menu */
-  }
-  
-  .formControl {
-    margin: 1rem;
-    min-width: 240px;
-  }
+}
+
+.select .MuiOutlinedInput-root:hover fieldset {
+  border-color: #444; /* Cor da borda ao passar o mouse */
+}
+
+.select fieldset {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-color: #333;
+}
+
+.menuItem {
+  color: #fff; /* Cor do texto dos itens do menu */
+  background-color: #333; /* Cor de fundo dos itens do menu */
+}
+
+.menuItem:hover {
+  background-color: #323946; /* Cor de fundo ao passar o mouse sobre os itens do menu */
+}
+
+.menuItem.Mui-selected {
+  background-color: #444 !important; /* Cor de fundo do item selecionado */
+}
+
+.formControl {
+  margin: 1rem;
+  min-width: 240px;
+}
