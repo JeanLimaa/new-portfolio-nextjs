@@ -33,9 +33,15 @@
     },
     "subTitle": "Fullstack Javascript Developer",
     "description": {
-      "content": "My name is Jean Lima, I'm from the state of Bahia and I'm 19 years old. I'm passionate about Computing and I'm currently pursuing a Bachelor's degree in Computer Science, which I really enjoy and have been interested in since childhood. I am a Fullstack Javascript developer, with a focus on front-end development.",
+      "content": [
+        "I'm Jean Lima, a young man from Bahia and Fullstack JavaScript developer with a strong emphasis on front-end. My passion for creating innovative web solutions leads me to work on both aspects of web development, with a special focus on providing unique user experiences and intuitive interfaces.",
+        "With solid experience in modern technologies and frameworks, I can transform ideas into functional and attractive web applications. I am always looking to learn new tools and techniques, ensuring that my projects are ahead of technological trends."
+      ],
       "showMore": {
-        "content": "need be transleted",
+        "content": [
+          "I am currently studying a Bachelor's degree in Computer Science, a field that has fascinated me since childhood. This degree complements my practical experience with a robust theoretical base, strengthening my skills and expanding my knowledge in developing complex solutions.",
+          "Explore my portfolio to learn more about my projects and skills. I'm excited to share my work and discuss how I can contribute to future projects!"
+        ],
         "readMore": "Read more",
         "readLess": "Read less"
       }
