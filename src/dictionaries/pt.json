@@ -54,8 +54,7 @@
       "Software"
     ],
     "filter": {
-      "all": "Todos",
-      "filterBy": "Filtrar por Categorias"
+      "all": "Todas as Tecnologias"
     }
   },
   "portfolio": {

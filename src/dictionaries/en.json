@@ -50,8 +50,7 @@
   "skills": {
     "title": ["Software", "Development Skills"],
     "filter": {
-      "all": "All",
-      "filterBy": "Filter by Category"
+      "all": "All Technologies"
     }
   },
   "portfolio":{

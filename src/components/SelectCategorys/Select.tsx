@@ -7,7 +7,8 @@ import { techsArray } from '@/utils/techs';
 import { useState } from 'react';
 import styles from './SelectCategorys.module.css';
 
-export function SelectCategorys({category, setCategory}: any) {
+
+export function SelectCategorys({dictionary, category, setCategory}: any) {
   /* const [category, setAge] = useState('all'); */
 
   const handleChange = (event: SelectChangeEvent) => {
@@ -31,7 +32,7 @@ export function SelectCategorys({category, setCategory}: any) {
             outlined: styles.select // Aplica a classe para estilizar o Select com borda
           }}
         >
-          <MenuItem value={"all"} className={styles.menuItem}><h3>Todas Tecnologias</h3></MenuItem>
+          <MenuItem value={"all"} className={styles.menuItem}><h3>{dictionary.filter.all}</h3></MenuItem>
           {allCategorys.map(category => (
             <MenuItem key={category} value={category} className={styles.menuItem}><h3>{category}</h3></MenuItem>
           ))}

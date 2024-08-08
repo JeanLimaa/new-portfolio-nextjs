@@ -39,7 +39,7 @@ export interface AboutSectionInterface {
 
 export interface SkillsSectionInterface {
     title: [string, string];
-    filter: { all: string; filterBy: string; };
+    filter: { all: string; };
 }
 
 export interface PortfolioSectionInterface {
