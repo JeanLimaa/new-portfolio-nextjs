@@ -1,13 +1,13 @@
-import { Locale, i18n } from "@/i18n-config";
-
 type TechKey = 'Nodejs' | 'TailwindCss' | 'NextJs' | 'Python' | 'OpenCV' | 'MediaPipe' | 'React' | 'MongoDB' | 'Javascript' | 'Typescript' | 'Bootstrap' | 'MaterialUI' | 'Css' | 'Html';
+//type TechKey = keyof typeof techsInfo;
 
+export type THrefRepo = string | {front?: string, back?: string, mobile?: string};
 interface ProjectsInterface {
     title: {pt: string, en: string} | string; // caso nao precise de traudção, basta a string
     image: string;
     href: string;
     description: {pt: string, en: string};
-    hrefRepo: string;
+    hrefRepo: THrefRepo;
     techs: TechKey[];
     disabledProjectUrl?: boolean;
     disabledRepo?: boolean;
