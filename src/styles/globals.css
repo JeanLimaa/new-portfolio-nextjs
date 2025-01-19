@@ -292,6 +292,11 @@ section#about {
     border: 1px solid var(--main-color)/* #d541fa */;
 }
 
+.portfolio-buttons{
+    gap: 0.5rem;
+    margin-top: 3.7rem;
+}
+
 .skills h2 {
     margin-bottom: 4rem;
 }
@@ -337,6 +342,11 @@ section#about {
     .skills-container {
         grid-template-columns: repeat(4, 3fr);
     }
+
+    .portfolio-buttons{
+        gap: 0.5rem;
+        margin-top: 0;
+    }
 }
 
 @media(max-width: 1024px) {
@@ -368,9 +378,8 @@ section#about {
         padding: 2rem;
     }
 
-    .portfolio-container {
-        max-width: 300px;
-        min-width: 300px;
+    .portfolio-buttons{
+        margin-top: 0;
     }
 }
 
@@ -451,6 +460,11 @@ section#about {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+
+    .portfolio-container{
+        min-width: 97.5vw;
+        max-width: 97.5vw;
     }
 }
 
