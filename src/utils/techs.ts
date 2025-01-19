@@ -7,12 +7,14 @@ interface TechsInterface {
 export const techsInfo: TechsInterface = {
     Javascript: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', category: ['Front-End', 'Back-End'] },
     Typescript: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', category: ['Front-End', 'Back-End'] },
+    NestJS: {url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg", category: ['Back-End'] },
     NextJs: { url: '/nextjs.svg', category: ['Front-End'] },
     React: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', category: ['Front-End'] },
-    Redux: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg', category: ['Front-End'] },
+    /* Redux: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg', category: ['Front-End'] }, */
     Nodejs: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', category: ['Back-End'] },
     MongoDB: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', category: ['Back-End'] },
     PostgreSQL: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', category: ['Back-End'] },
+    MySQL: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', category: ['Back-End'] },
     Prisma: { url: 'https://img.icons8.com/color/48/prisma-orm.png', category: ['Back-End'] },
     TailwindCss: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg', category: ['Front-End'] },
     MaterialUI: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg', category: ['Front-End'] },
@@ -25,7 +27,7 @@ export const techsInfo: TechsInterface = {
     Git: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', category: ['DevOps'] },
     GitHub: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg', category: ['DevOps'] },
     BitBucket: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg', category: ['DevOps'] }
-  };
+};
 
 export const techsArray = Object.entries(techsInfo).map(([name, infos]) => ({
     name,
