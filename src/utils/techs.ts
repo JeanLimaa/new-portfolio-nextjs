@@ -1,6 +1,18 @@
 export type CategorysType = 'all' | 'Front-End' | 'Back-End' | 'DevOps'
 
-export const techsInfo = {
+export type TechKeys = 
+    "Javascript" | "Typescript" | "NestJS" | "NextJs" | "React" | "Nodejs" |
+    "MongoDB" | "PostgreSQL" | "MySQL" | "Prisma" | "TailwindCss" |
+    "MaterialUI" | "Bootstrap" | "Css" | "Html" | "Git" | "GitHub" | "BitBucket";
+
+interface TechInfo {
+    url: string;
+    category: CategorysType[];
+}
+
+type ITechInfo = Record<TechKeys, TechInfo>;
+
+export const techsInfo: ITechInfo = {
     Javascript: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', category: ['Front-End', 'Back-End'] },
     Typescript: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', category: ['Front-End', 'Back-End'] },
     NestJS: {url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg", category: ['Back-End'] },
@@ -25,10 +37,8 @@ export const techsInfo = {
     BitBucket: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg', category: ['DevOps'] }
 } as const;
 
-export type TechKeys = keyof typeof techsInfo;
-
 export const techsArray = Object.entries(techsInfo).map(([name, infos]) => ({
     name,
     url: infos.url,
-    category: infos.category
+    category: infos.category as CategorysType[]
 }));
