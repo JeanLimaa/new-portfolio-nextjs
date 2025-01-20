@@ -71,7 +71,7 @@ const allProjects: ProjectsInterface[] = [
         hrefRepo: "https://github.com/JeanLimaa/landing-page-suldepilabronze",
         techs: ['NextJs', 'React', 'Typescript', 'TailwindCss']
     },
-/*     {
+    {
         title: {pt: 'AgendeFacil – Micro-SaaS de Agendamentos', en: 'AgendeFacil – Micro-SaaS for Scheduling'},
         image: '/projects/agende-facil.png',
         disabledProjectUrl: true,
@@ -85,7 +85,7 @@ const allProjects: ProjectsInterface[] = [
             back: "https://github.com/JeanLimaa/agende-facil-backend"
         },
         techs: ['NestJS', 'Prisma', 'MySQL','NextJs', 'React', 'Typescript', 'TailwindCss']
-    }, */
+    },
     {
         title: {pt: 'Loja Virtual – Comércio Eletrônico Simulado', en: 'Virtual Store – Fictional E-Commerce'},
         image: '/projects/loja-virtual.png',

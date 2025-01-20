@@ -457,6 +457,30 @@ section#about {
     }
 }
 
+.projects-styledmenu-text{
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.projects-styledmenu a{
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.projects-styledmenu a > li{
+    font-size: 1.2rem;
+}
+
+.projects-styledmenu a > li > svg{
+    margin-right: 1rem;
+}
+
+.projects-styledmenu a:hover{
+    color: var(--main-color) !important;
+}
+
 @media (max-width: 450px) {
     html {
         font-size: 50%;

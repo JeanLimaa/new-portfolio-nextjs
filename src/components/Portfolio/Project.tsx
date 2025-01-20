@@ -96,6 +96,7 @@ export const Project = ({
           {description}
         </Typography>
       </CardContent>
+
       <CardActions sx={{ gap: "0.5rem" }} className="portfolio-buttons">
         <Button
           sx={{ paddingX: "2rem", fontSize: "1.11rem" }}
@@ -110,10 +111,10 @@ export const Project = ({
         </Button>
         {hrefRepo && typeof hrefRepo === "object" ? (
           <>
-            <Button
+             <Button
               sx={{ paddingX: "2rem", fontSize: "1.11rem" }}
               startIcon={<GitHubIcon fontSize="medium" color="primary" />}
-              endIcon={<MoreVertIcon sx={{color: "blue"}} fontSize="medium" color="action" />}
+              endIcon={<MoreVertIcon fontSize="medium" color="primary" />}
               aria-controls={open ? 'demo-customized-menu' : undefined}
               aria-haspopup="true"
               aria-expanded={open ? 'true' : undefined}
@@ -123,8 +124,9 @@ export const Project = ({
               variant="outlined"
               disabled={disabledRepo || false}
             >
-              Repositório
+              Repositórios
             </Button>
+
             <StyledMenu
               id="demo-customized-menu"
               MenuListProps={{
@@ -133,29 +135,33 @@ export const Project = ({
               anchorEl={anchorEl}
               open={open}
               onClose={handleClose}
+              className={"projects-styledmenu"}
             >
+              <Typography variant="h6" className="projects-styledmenu-text">Repositórios</Typography>
+
               {hrefRepo.mobile && (
-                <MenuItem href={hrefRepo.mobile} onClick={handleClose} disableRipple>
-                  <a href={hrefRepo.mobile} target="_blank" rel="noopener noreferrer">
-                    Mobile
-                  </a>
-                </MenuItem>
+                    <MenuItem href={hrefRepo.mobile} onClick={handleClose} disableRipple>
+                        <OpenInNewIcon />
+                        Mobile
+                    </MenuItem>
               )}
 
               {hrefRepo.front && (
-                <MenuItem onClick={handleClose} disableRipple>
                   <a href={hrefRepo.front} target="_blank" rel="noopener noreferrer">
-                    Front-End
+                    <MenuItem onClick={handleClose} disableRipple>
+                        <OpenInNewIcon />
+                        Front-End
+                    </MenuItem>
                   </a>
-                </MenuItem>
               )}
 
               {hrefRepo.back && (
-                <MenuItem href={hrefRepo.back} onClick={handleClose} disableRipple>
                   <a href={hrefRepo.back} target="_blank" rel="noopener noreferrer">
-                    Back-End
+                    <MenuItem href={hrefRepo.back} onClick={handleClose} disableRipple>
+                        <OpenInNewIcon />
+                        Back-End
+                    </MenuItem>
                   </a>
-                </MenuItem>
               )}
             </StyledMenu>
           </>

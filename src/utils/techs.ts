@@ -35,7 +35,7 @@ export const techsInfo: ITechInfo = {
     Git: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', category: ['DevOps'] },
     GitHub: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg', category: ['DevOps'] },
     BitBucket: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg', category: ['DevOps'] }
-} as const;
+};
 
 export const techsArray = Object.entries(techsInfo).map(([name, infos]) => ({
     name,
