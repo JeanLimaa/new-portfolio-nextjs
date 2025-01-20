@@ -1,10 +1,6 @@
 export type CategorysType = 'all' | 'Front-End' | 'Back-End' | 'DevOps'
 
-interface TechsInterface {
-    [techName: string]: {url: string, category: CategorysType[]}
-}
-
-export const techsInfo: TechsInterface = {
+export const techsInfo = {
     Javascript: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', category: ['Front-End', 'Back-End'] },
     Typescript: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', category: ['Front-End', 'Back-End'] },
     NestJS: {url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg", category: ['Back-End'] },
@@ -27,7 +23,9 @@ export const techsInfo: TechsInterface = {
     Git: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', category: ['DevOps'] },
     GitHub: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg', category: ['DevOps'] },
     BitBucket: { url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bitbucket/bitbucket-original.svg', category: ['DevOps'] }
-};
+} as const;
+
+export type TechKeys = keyof typeof techsInfo;
 
 export const techsArray = Object.entries(techsInfo).map(([name, infos]) => ({
     name,

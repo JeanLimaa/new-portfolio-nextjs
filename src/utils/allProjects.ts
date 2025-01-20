@@ -1,4 +1,4 @@
-type TechKey = 'MySQL' | 'NestJS' | 'PostgreSQL' | 'Prisma' | 'Nodejs' | 'TailwindCss' | 'NextJs' | 'Python' | 'OpenCV' | 'MediaPipe' | 'React' | 'MongoDB' | 'Javascript' | 'Typescript' | 'Bootstrap' | 'MaterialUI' | 'Css' | 'Html';
+import { TechKeys } from "./techs";
 
 export type THrefRepo = string | {front?: string, back?: string, mobile?: string};
 interface ProjectsInterface {
@@ -7,7 +7,7 @@ interface ProjectsInterface {
     href: string;
     description: {pt: string, en: string};
     hrefRepo: THrefRepo;
-    techs: TechKey[];
+    techs: TechKeys[];
     disabledProjectUrl?: boolean;
     disabledRepo?: boolean;
   }
