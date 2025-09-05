@@ -1,5 +1,5 @@
 import { ShowMoreText } from "./ShowMoreText";
-import { AboutSectionInterface } from "@/interfaces/i18n"
+import { AboutSectionInterface } from "@/interfaces/i18n.interface"
 interface AboutSectionProps {
     dictionary : AboutSectionInterface;
 }

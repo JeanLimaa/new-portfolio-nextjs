@@ -4,7 +4,7 @@ import { techsInfo } from "../../utils/techs"
 
 import allProjects from "@/utils/allProjects"
 
-import { PortfolioSectionInterface } from "@/interfaces/i18n"
+import { PortfolioSectionInterface } from "@/interfaces/i18n.interface"
 import { Locale } from "@/i18n-config"
 interface PortfolioSectionProps {
     lang: Locale;

@@ -1,7 +1,7 @@
 import HeaderLink from "@/components/AnchorSection"; 
 import { Navbar } from "./Navbar";
 
-import { HeaderInterface } from "@/interfaces/i18n"
+import { HeaderInterface } from "@/interfaces/i18n.interface"
 import { ToggleLanguages } from "../ToggleLanguages";
 interface HeaderProps {
     dictionary : HeaderInterface;

@@ -3,7 +3,7 @@ import Cookies from "js-cookie";
 
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
-import { HeaderInterface } from "@/interfaces/i18n"
+import { HeaderInterface } from "@/interfaces/i18n.interface"
 import { i18n, Locale } from "@/i18n-config";
 import { i18nUrls } from "@/utils/i18n-utils";
 

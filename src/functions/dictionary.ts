@@ -1,4 +1,4 @@
-import { DictionaryInterface } from "@/interfaces/i18n";
+import { DictionaryInterface } from "@/interfaces/i18n.interface";
 
 // Define the dictionaries object
 const dictionaries: { [key: string]: () => Promise<any> } = {

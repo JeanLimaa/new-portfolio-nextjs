@@ -1,7 +1,7 @@
 import Typedjs from "./Typedjs"
 import Image from "next/image"
 import { ArrowDown } from "./ArrowDown"
-import { HomeSectionInterface } from "@/interfaces/i18n"
+import { HomeSectionInterface } from "@/interfaces/i18n.interface"
 interface HomeSectionProps {
     dictionary : HomeSectionInterface;
 }

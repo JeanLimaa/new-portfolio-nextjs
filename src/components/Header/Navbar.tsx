@@ -3,7 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { ReactNode, useState } from 'react';
 
-import { HeaderInterface } from "@/interfaces/i18n"
+import { HeaderInterface } from "@/interfaces/i18n.interface"
 
 interface Props {
     children: ReactNode;

@@ -4,7 +4,7 @@ import { techsArray } from "@/utils/techs"
 import { SelectCategorys } from "../SelectCategorys/Select"
 import { useState } from "react";
 import { CategorysType } from "@/utils/techs";
-import { SkillsSectionInterface } from "@/interfaces/i18n";
+import { SkillsSectionInterface } from "@/interfaces/i18n.interface";
 
 interface SkillsSectionProps {
     dictionary: SkillsSectionInterface;

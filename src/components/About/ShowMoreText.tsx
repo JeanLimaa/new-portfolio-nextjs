@@ -1,5 +1,5 @@
 'use client'
-import { AboutSectionInterface } from '@/interfaces/i18n';
+import { AboutSectionInterface } from '@/interfaces/i18n.interface';
 import React, { useState } from 'react';
 
 interface AboutSectionProps {
