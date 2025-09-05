@@ -18,17 +18,24 @@ interface HeaderProps {
 export const ToggleLanguages = ({ dictionary }: HeaderProps) => {
     const path = usePathname();
     const router = useRouter();
-
+    
     const langInPath: Locale = path.split("/")[1] as Locale;
     const [selectedLanguage, setSelectedLanguage] = useState<Locale>(langInPath);
     const [isOpen, setIsOpen] = useState(false);
 
     const handleLanguageChange = (selectedLanguage: Locale) => {
         setSelectedLanguage(selectedLanguage);
-
         Cookies.set("language", selectedLanguage);
+        
+        // quebra o path atual em partes
+        const segments = path.split("/").filter(Boolean);
 
-        router.push(selectedLanguage);
+        // substitui o primeiro segmento (lang) pelo novo
+        segments[0] = selectedLanguage;
+
+        const newPath = "/" + segments.join("/");
+
+        router.push(newPath);
     };
 
     const toggleDropdown = () => setIsOpen(!isOpen);
