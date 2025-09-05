@@ -13,6 +13,7 @@ export interface HomeSectionInterface {
     myName: string;
     whatIm: string;
     description: string;
+    safeContactsDescription: string;
     cv: {
         content: string;
         link: string;

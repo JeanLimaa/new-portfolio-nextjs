@@ -15,6 +15,7 @@
     "title": "Hey there, i'm",
     "whatIm": "And i'm",
     "description": "Welcome to my Portfolio. Here, you'll know more about me! Under you find my CV and Social Medias to contact.",
+    "safeContactsDescription": "Welcome to my Portfolio. Here, you'll know more about my journey, skills, and projects I’ve worked on.",
     "cv": {
       "content": "Download CV",
       "link": "ENGLISH_CV.pdf",
