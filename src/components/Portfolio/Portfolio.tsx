@@ -25,6 +25,8 @@ export const Portfolio = ({ lang, dictionary }: PortfolioSectionProps) => {
                         hrefRepo={project.hrefRepo}
                         disabledProject={project.disabledProjectUrl}
                         disabledRepo={project.disabledRepo}
+                        appStoreUrl={project.appStoreUrl}
+                        playStoreUrl={project.playStoreUrl}
                     >
                         {project.techs.map(techs => (
                             <TechImage key={techs} src={techsInfo[techs].url} />

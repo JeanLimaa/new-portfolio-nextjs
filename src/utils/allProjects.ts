@@ -10,6 +10,8 @@ interface ProjectsInterface {
     techs: TechKeys[];
     disabledProjectUrl?: boolean;
     disabledRepo?: boolean;
+    appStoreUrl?: string;
+    playStoreUrl?: string;
   }
 
 const allProjects: ProjectsInterface[] = [
@@ -23,7 +25,9 @@ const allProjects: ProjectsInterface[] = [
             en: 'My flagship personal project. A robust full-stack SaaS platform for appointment and payment management, featuring multi-tenant architecture, transparent checkout integration, and native mobile apps for iOS and Android.'
         },
         hrefRepo: "",
-        techs: ['NestJS', 'Prisma', 'PostgreSQL', 'Docker', 'Sentry', 'Expo', 'React', 'NextJs', 'Typescript', 'TailwindCss']
+        techs: ['NestJS', 'Prisma', 'PostgreSQL', 'Docker', 'Sentry', 'Expo', 'React', 'NextJs', 'Typescript', 'TailwindCss'],
+        appStoreUrl: 'https://apps.apple.com/app/timoraup-agendamentos-online/id6757621725',
+        playStoreUrl: 'https://play.google.com/store/apps/details?id=com.timoraup.app&pcampaignid',
     },
     {
         title: {pt: 'LME Quot – Sistema de Cotação de Metais', en: 'LME Quot – Metal Quotation System'},

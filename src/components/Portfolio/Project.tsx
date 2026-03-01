@@ -8,6 +8,8 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import AppleIcon from "@mui/icons-material/Apple";
+import ShopIcon from "@mui/icons-material/Shop";
 import { THrefRepo } from "@/utils/allProjects";
 import { MenuItem, Divider } from "@mui/material";
 import { StyledMenu } from "./StyledMenu";
@@ -22,6 +24,8 @@ interface ProjectProps {
   image: string;
   href?: string;
   hrefRepo?: THrefRepo;
+  appStoreUrl?: string;
+  playStoreUrl?: string;
 }
 
 interface RepositoryBtnProps {
@@ -55,6 +59,8 @@ export const Project = ({
   children,
   disabledProject,
   disabledRepo,
+  appStoreUrl,
+  playStoreUrl,
 }: ProjectProps) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -73,7 +79,9 @@ export const Project = ({
       }}
       className="portfolio-container"
     >
-      {children}
+      <div className="portfolio-techs-row">
+        {children}
+      </div>
       <CardMedia
         component="img"
         alt={title}
@@ -172,6 +180,32 @@ export const Project = ({
           >
             Repositório
           </RepositoryBtn>
+        )}
+
+        {appStoreUrl && (
+          <Button
+            sx={{ paddingX: "1.2rem", fontSize: "1.11rem", minWidth: 'auto' }}
+            startIcon={<AppleIcon fontSize="medium" color="info" />}
+            size="large"
+            variant="outlined"
+            href={appStoreUrl}
+            target="_blank"
+          >
+            App Store
+          </Button>
+        )}
+
+        {playStoreUrl && (
+          <Button
+            sx={{ paddingX: "1.2rem", fontSize: "1.11rem", minWidth: 'auto' }}
+            startIcon={<ShopIcon fontSize="medium" color="info" />}
+            size="large"
+            variant="outlined"
+            href={playStoreUrl}
+            target="_blank"
+          >
+            Google Play
+          </Button>
         )}
       </CardActions>
     </Card>

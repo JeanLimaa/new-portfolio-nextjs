@@ -286,6 +286,24 @@ section#about {
     max-height: 500px;
 }
 
+.portfolio-techs-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-color) transparent;
+    padding: 0.3rem 0;
+}
+
+.portfolio-techs-row::-webkit-scrollbar {
+    height: 4px;
+}
+
+.portfolio-techs-row::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 4px;
+}
+
 .portfolio-container:hover {
     transform: scale(1.05);
     transition: ease-in-out 0.7s;
@@ -294,6 +312,7 @@ section#about {
 
 .portfolio-buttons{
     gap: 0.5rem;
+    flex-wrap: wrap;
     margin-top: 3.7rem;
 }
 
