@@ -14,27 +14,16 @@ interface ProjectsInterface {
 
 const allProjects: ProjectsInterface[] = [
     {
-        title: 'ReactivePass – Gerenciador e Gerador de Senhas',
-        image: '/projects/reactivepass.png',
-        href: 'https://reactivepass.vercel.app',
-        description: { 
-            pt: 'ReactivePass é uma aplicação fullstack que oferece um gerenciador seguro de senhas e a geração de senhas fortes, com foco em usabilidade e proteção de dados.',
-            en: 'ReactivePass is a fullstack application that offers a secure password manager and strong password generation, focusing on usability and data protection.'
+        title: {pt: 'TimoraUp – Agendamentos de Serviços', en: 'TimoraUp – Scheduling Services'},
+        image: '/projects/timoraup.png',
+        disabledProjectUrl: false,
+        href: 'https://timoraup.com',
+        description: {
+            pt: 'Meu projeto (pessoal) de maior orgulho. Uma plataforma SaaS robusta para gestão de agendamentos e pagamentos, com arquitetura multi-tenant, checkout transparente e aplicativos nativos para iOS e Android.',
+            en: 'My flagship personal project. A robust full-stack SaaS platform for appointment and payment management, featuring multi-tenant architecture, transparent checkout integration, and native mobile apps for iOS and Android.'
         },
-        hrefRepo: "https://github.com/JeanLimaa/reactivepass-gerador-de-senhas",
-        techs: ['NextJs', 'React', 'MongoDB', 'TailwindCss', 'Javascript']
-    },
-    {
-        title: 'Integração de API QUOD para Análise de Crédito',
-        image: '/projects/analise-de-credito.jpg',
-        disabledRepo: true,
-        hrefRepo: "",   
-        href: "https://wcheckbrasil.com.br/consultas-de-credito-e-localizacao/",
-        description: { 
-            pt: 'Desenvolvimento freelance envolvendo a integração da API QUOD para consultas de análise de crédito.',
-            en: 'Freelance project integrating the QUOD API for credit analysis queries, including secure authentication and financial data processing.'
-        },
-        techs: ['NestJS', 'Nodejs', 'Typescript', 'Prisma', 'PostgreSQL', 'NextJs']
+        hrefRepo: "",
+        techs: ['NestJS', 'Prisma', 'PostgreSQL', 'Docker', 'Sentry', 'Expo', 'React', 'NextJs', 'Typescript', 'TailwindCss']
     },
     {
         title: {pt: 'LME Quot – Sistema de Cotação de Metais', en: 'LME Quot – Metal Quotation System'},
@@ -49,7 +38,30 @@ const allProjects: ProjectsInterface[] = [
         disabledRepo: true
     },
     {
-        title: 'eSenhas – Página de Apresentação',
+        title: {pt: 'ReactivePass – Gerenciador de Senhas Seguro', en: 'ReactivePass – Secure Password Manager'},
+        image: '/projects/reactivepass.png',
+        href: 'https://reactivepass.vercel.app',
+        description: { 
+            pt: 'ReactivePass é uma aplicação fullstack que oferece um gerenciador seguro de senhas e a geração de senhas fortes, com foco em usabilidade e proteção de dados.',
+            en: 'ReactivePass is a fullstack application that offers a secure password manager and strong password generation, focusing on usability and data protection.'
+        },
+        hrefRepo: "https://github.com/JeanLimaa/reactivepass-gerador-de-senhas",
+        techs: ['NextJs', 'React', 'MongoDB', 'TailwindCss', 'Javascript']
+    },
+    {
+        title: {pt: 'Integração de API QUOD para Análise de Crédito', en: 'QUOD API Integration for Credit Analysis'},
+        image: '/projects/analise-de-credito.jpg',
+        disabledRepo: true,
+        hrefRepo: "",   
+        href: "https://wcheckbrasil.com.br/consultas-de-credito-e-localizacao/",
+        description: { 
+            pt: 'Desenvolvimento freelance envolvendo a integração da API QUOD para consultas de análise de crédito.',
+            en: 'Freelance project integrating the QUOD API for credit analysis queries, including secure authentication and financial data processing.'
+        },
+        techs: ['NestJS', 'Nodejs', 'Typescript', 'Prisma', 'PostgreSQL', 'NextJs']
+    },
+    {
+        title: {pt: 'eSenhas – Landing Page para Empresa de Senhas Digitais', en: 'eSenhas – Landing Page for Digital Password Company'},
         image: '/projects/esenhas.png',
         href: 'https://esenhas.com.br',
         description: { 
@@ -61,7 +73,7 @@ const allProjects: ProjectsInterface[] = [
         techs: ['NextJs', 'React', 'TailwindCss']
     },
     {
-        title: 'SulDepilla&Bronze – Página Promocional',
+        title: 'SulDepilla&Bronze – Landing Page',
         image: '/projects/sulldepilaebronze.png',
         href: 'https://suldepillaebronze.vercel.app',
         description: {
@@ -70,21 +82,6 @@ const allProjects: ProjectsInterface[] = [
         },
         hrefRepo: "https://github.com/JeanLimaa/landing-page-suldepilabronze",
         techs: ['NextJs', 'React', 'Typescript', 'TailwindCss']
-    },
-    {
-        title: {pt: 'AgendeFacil – Micro-SaaS de Agendamentos', en: 'AgendeFacil – Micro-SaaS for Scheduling'},
-        image: '/projects/agende-facil.png',
-        disabledProjectUrl: true,
-        href: '',
-        description: {
-            pt: 'Solução SaaS para agendamento de serviços, com funcionalidades personalizáveis e interface intuitiva, atualmente em desenvolvimento.',
-            en: 'SaaS solution for service scheduling with customizable features and an intuitive interface, currently in development.'
-        },
-        hrefRepo: {
-            front: "https://github.com/JeanLimaa/agende-facil-frontend", 
-            back: "https://github.com/JeanLimaa/agende-facil-backend"
-        },
-        techs: ['NestJS', 'Prisma', 'MySQL','NextJs', 'React', 'Typescript', 'TailwindCss']
     },
     {
         title: {pt: 'Loja Virtual – Comércio Eletrônico Simulado', en: 'Virtual Store – Fictional E-Commerce'},

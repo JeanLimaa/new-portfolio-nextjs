@@ -82,7 +82,7 @@ export const Project = ({
         image={image}
       />
       <CardContent
-        sx={{ height: '130px' }}
+        sx={{ height: '160px' }}
       >
         <Typography
           gutterBottom
