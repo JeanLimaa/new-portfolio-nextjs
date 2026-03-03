@@ -305,15 +305,32 @@ section#about {
 }
 
 .portfolio-container:hover {
-    transform: scale(1.05);
-    transition: ease-in-out 0.7s;
+    transition: border ease-in-out 0.3s;
     border: 1px solid var(--main-color)/* #d541fa */;
 }
 
 .portfolio-buttons{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 0.5rem;
-    flex-wrap: wrap;
     margin-top: 3.7rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-color) transparent;
+    padding-bottom: 0.4rem;
+}
+
+.portfolio-buttons::-webkit-scrollbar {
+    height: 4px;
+}
+
+.portfolio-buttons::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 4px;
+}
+
+.portfolio-buttons > * {
+    flex-shrink: 0;
 }
 
 .skills h2 {

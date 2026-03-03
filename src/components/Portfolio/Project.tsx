@@ -105,7 +105,7 @@ export const Project = ({
         </Typography>
       </CardContent>
 
-      <CardActions sx={{ gap: "0.5rem" }} className="portfolio-buttons">
+      <CardActions sx={{ gap: "0.5rem", flexWrap: "nowrap", overflowX: "auto", scrollbarWidth: "thin" }} className="portfolio-buttons">
         <Button
           sx={{ paddingX: "2rem", fontSize: "1.11rem" }}
           startIcon={<OpenInNewIcon fontSize="medium" color="action" />}
